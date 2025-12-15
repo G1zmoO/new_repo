@@ -1,0 +1,18 @@
+
+  1  git clone https://github.com/G1zmoO/new_repo
+  2  git checkout -b feature
+  3  echo "readme update" >> README.md
+  4  echo "temporary ignore rules" >> .gitignore.txt 
+  5  git add README.md .gitignore.txt 
+  6  git commit -m "update readme and gitignore"
+  7  git push -u origin feature
+  8  git checkout -b feature
+  9  git push -u origin feature
+  10  git commit --amend -m "Update Readme .gitignore ammend"
+  11  git push --force origin feature
+  12  git checkout main
+  13  git merge feature
+  14  cd ICH/Linux/new_repo/
+  15  git checkout main
+  16  git push origin main
+  17  history > history.txt
